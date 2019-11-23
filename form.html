@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>forms</title>
+    <style>
+        fieldset{
+            border: 2px solid black;
+            background-color: lightblue;
+        }
+
+
+        .form-group{
+            background-color: tomato;
+            border:  1px solid black;
+        }
+        .form-group:hover{
+            background-color: yellow;
+        }
+        .form-group:focus-within{
+            background-color: yellow;
+            color: limegreen;
+        }
+</style>
+</head>
+<body>
+    <fieldset>
+            <h1>Registration Form </h1>
+<div class="form-group">
+    <form>
+    <dl>
+        Name:
+        <input type="text name" name="txtname" pattern="[a-Z]{4,12}" placeholder="4-15 char both upper lower " required>
+    </div>
+    </dl>
+    
+    <div>
+    <form>
+<dl>
+    Password:
+   
+       <input type="text password"  name="txtpwd"  pattern="[A-Z]{4,15}" placeholder="4-15 char mst be only uppercase" required>
+
+    </dl>
+
+</div>
+    
+    <div>
+        <form>        
+        <dl>
+           Age:
+            <input type="text" name="txtAge" pattern="[0-9]{1,2}" placeholder="Age b/t 18-32"  required>
+                </dl>
+                
+                </div>
+    
+    <div class="form-group" >
+        <form>
+        <dl>
+            Mobile:
+           <input type="text" name="txtmobile"  pattern="\+91[0-9]{10}" placeholder="start with +91"  autofocus required> 
+            </dl>
+    </div>
+    <button>Submit</button>
+    </fieldset>
+</body>
+</html>
